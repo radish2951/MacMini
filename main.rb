@@ -15,6 +15,8 @@ contents.select! do |content|
   content.match(/\[整備済製品\]/)
 end
 
+# slack(contents.length)
+
 old_contents = []
 
 File.open('list.txt') do |f|
