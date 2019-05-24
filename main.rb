@@ -27,6 +27,10 @@ File.open('list.txt') do |f|
 
 end
 
+if Math.abs(contents.length - old_contents.length) > 8
+  exit
+end
+
 contents.each do |content|
 
   if not old_contents.include?(content)
