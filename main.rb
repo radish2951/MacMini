@@ -27,7 +27,7 @@ File.open('list.txt') do |f|
 
 end
 
-if Math.abs(contents.length - old_contents.length) > 8
+if (contents.length - old_contents.length).abs > 8
   exit
 end
 
